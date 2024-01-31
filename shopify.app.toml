@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "igor-remix-trial"
+client_id = "f150b5b8a03cf93c13487b7f564fbc50"
+application_url = "https://merry-concord-mineral-dom.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://merry-concord-mineral-dom.trycloudflare.com/auth/callback",
+  "https://merry-concord-mineral-dom.trycloudflare.com/auth/shopify/callback",
+  "https://merry-concord-mineral-dom.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "igor-trial.myshopify.com"
